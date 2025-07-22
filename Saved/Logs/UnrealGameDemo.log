@@ -2037,3 +2037,642 @@ LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
 [2025.07.22-21.11.51:222][ 48]LogFab: Display: User logged in
 [2025.07.22-21.11.51:222][ 48]LogFab: Display: User client id: xyza7891REBVsEqSJRRNXmlS7EQHM459
 [2025.07.22-21.11.51:407][ 58]LogEOSSDK: Warning: LogEOS: Error response received from backend. ServiceName=[Friend], OperationName=[GetBlockList], Url=[<Redacted>], HttpStatus=[403], ErrorCode=[errors.com.epicgames.common.insufficient_scopes], NumericErrorCode=[1056], ErrorMessage=[Insufficient access scopes. Expected: [friends_list]], CorrId=[EOS-ekhZrHOtLEC57_4o0Uju1g-oNKvNeyMuUSmfx-zb8eqdw]
+[2025.07.22-21.14.49:512][ 82]LogShaderCompilers: Display: ================================================
+[2025.07.22-21.14.49:512][ 82]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.07.22-21.14.49:512][ 82]LogShaderCompilers: Display: Total job queries 1.761, among them cache hits 0 (0.00%), DDC hits 0 (0.00%), Duplicates 367 (20.84%)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Tracking 1.394 distinct input hashes that result in 1.049 distinct outputs (75.25%)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: RAM used: 688,61 KiB of 1,60 GiB budget. Usage: 0.04%
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Shaders Compiled: 1.394
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Jobs assigned 1.394, completed 1.394 (100%)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Average time worker was idle: 0.43 s
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Time job spent in pending queue: average 50.79 s, longest 129.84 s
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Job execution time: average 11.73 s, max 33.98 s
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Job life time (pending + execution): average 62.52 s, max 133.85
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Shader code size: average 12,864 KiB, min 1,199 KiB, max 49,172 KiB
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 166.28 s
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.27%
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Jobs were issued in 283 batches (only local compilation was used), average 4.93 jobs/batch
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Average processing rate: 8.38 jobs/sec
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Total thread time: 1.902,07 s
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Total thread preprocess time: 26,835 s
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Percentage time preprocessing: 1.41%
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Effective parallelization: 11.44 (times faster than compiling all shaders on one thread). Compare with number of workers: 12
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display:                                 TBasePassCSTLightMapPolicyHQ (compiled    1 times, average 5.37 sec, max 5.37 sec, min 5.37 sec)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display:  TBasePassCSTDistanceFieldShadowsAndLightMapPolicyHQSkylight (compiled    1 times, average 5.24 sec, max 5.24 sec, min 5.24 sec)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display:                                 TBasePassCSFNoLightMapPolicy (compiled    1 times, average 5.04 sec, max 5.04 sec, min 5.04 sec)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display:                         TBasePassCSTLightMapPolicyHQSkylight (compiled    1 times, average 4.59 sec, max 4.59 sec, min 4.59 sec)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display:                                 TBasePassCSTLightMapPolicyLQ (compiled    1 times, average 4.07 sec, max 4.07 sec, min 4.07 sec)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display:                                        FMicropolyRasterizeCS - 40.83% of total time (compiled  260 times, average 2.99 sec, max 6.83 sec, min 0.00 sec)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS - 11.34% of total time (compiled   68 times, average 3.17 sec, max 4.35 sec, min 2.11 sec)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display:                                               FHWRasterizeMS - 3.61% of total time (compiled   60 times, average 1.14 sec, max 1.48 sec, min 0.80 sec)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display:                                             FDebugViewModePS - 2.72% of total time (compiled   23 times, average 2.25 sec, max 3.42 sec, min 1.71 sec)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 2.62% of total time (compiled   50 times, average 0.99 sec, max 1.73 sec, min 0.67 sec)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: === Material stats ===
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Materials Cooked:        0
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Materials Translated:    150
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Material Total Translate Time: 0.14 s
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Material Translation Only: 0.05 s (34%)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: Material Cache Hits: 0 (0%)
+[2025.07.22-21.14.49:513][ 82]LogShaderCompilers: Display: ================================================
+[2025.07.22-21.17.20:864][686]LogPSOHitching: Encountered 150 PSO creation hitches so far (40 graphics, 110 compute). 0 of them were precached.
+[2025.07.22-21.17.21:971][738]LogDebuggerCommands: Repeating last play command: Seçilen Görünüm Penceresi
+[2025.07.22-21.17.21:976][738]LogContentBundle: [MainLevel(Bağımsız)] Generating Streaming for 0 Content Bundles.
+[2025.07.22-21.17.21:976][738]LogWorldPartition: Display: GenerateStreaming for 'MainLevel' started...
+[2025.07.22-21.17.21:980][738]LogWorldPartition: FSpatialHashSettings::UpdateSettings : UseAlignedGridLevels = 1, SnapNonAlignedGridLevelsToLowerLevels = 1, PlaceSmallActorsUsingLocation = 0, PlacePartitionActorsUsingLocation = 1
+[2025.07.22-21.17.21:981][738]LogWorldPartition: Display: GenerateStreaming for 'MainLevel' took 5.122 ms
+[2025.07.22-21.17.21:984][738]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.07.22-21.17.21:992][738]LogOnline: OSS: Created online subsystem instance for: NULL
+[2025.07.22-21.17.21:992][738]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for type [NULL]
+[2025.07.22-21.17.21:994][738]LogPlayLevel: Creating play world package: /Game/FPMovement/Maps/UEDPIE_0_MainLevel
+[2025.07.22-21.17.22:003][738]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009317s)
+[2025.07.22-21.17.22:003][738]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FPMovement/Maps/MainLevel.MainLevel to /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel (0.009397s)
+[2025.07.22-21.17.22:037][738]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2025.07.22-21.17.22:039][738]LogChaosDD: Creating Chaos Debug Draw Scene for world MainLevel
+[2025.07.22-21.17.22:042][738]LogWorldPartition: ULevel::OnLevelLoaded(MainLevel)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2025.07.22-21.17.22:042][738]LogWorldPartition: Display: WorldPartition initialize started...
+[2025.07.22-21.17.22:042][738]LogWorldPartition: UWorldPartition::Initialize : World = /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2025.07.22-21.17.22:042][738]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2025.07.22-21.17.22:045][738]LogWorldPartition: Display: WorldPartition initialize took 2.940 ms (total: 403.929 ms)
+[2025.07.22-21.17.22:045][738]LogPlayLevel: PIE: World Init took: (0.005745s)
+[2025.07.22-21.17.22:046][738]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2025.07.22-21.17.22:046][738]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.07.22-21.17.22:046][738]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.07.22-21.17.22:046][738]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.07.22-21.17.22:046][738]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.07.22-21.17.22:046][738]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2025.07.22-21.17.22:046][738]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.07.22-21.17.22:046][738]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2025.07.22-21.17.22:046][738]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.07.22-21.17.22:046][738]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.07.22-21.17.22:046][738]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.07.22-21.17.22:046][738]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.07.22-21.17.22:048][738]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.07.22-21.17.22:061][738]LogAudioMixer: Display: Using Audio Hardware Device Hoparlör (Realtek High Definition Audio)
+[2025.07.22-21.17.22:062][738]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.07.22-21.17.22:062][738]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.07.22-21.17.22:062][738]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.07.22-21.17.22:062][738]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=2
+[2025.07.22-21.17.22:062][738]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=2
+[2025.07.22-21.17.22:065][738]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=2
+[2025.07.22-21.17.22:065][738]LogInit: FAudioDevice initialized with ID 2.
+[2025.07.22-21.17.22:065][738]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=2
+[2025.07.22-21.17.22:065][738]LogAudio: Display: Audio Device (ID: 2) registered with world 'MainLevel'.
+[2025.07.22-21.17.22:065][738]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 2
+[2025.07.22-21.17.22:069][738]LogLoad: Game class is 'BP_FPMovementMode_C'
+[2025.07.22-21.17.22:072][738]LogWorld: Bringing World /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 60) at 2025.07.23-00.17.22
+[2025.07.22-21.17.22:072][738]LogWorld: Bringing up level for play took: 0.002756
+[2025.07.22-21.17.22:075][738]LogOnline: OSS: Created online subsystem instance for: :Context_1
+[2025.07.22-21.17.22:087][738]AnimBlueprintLog: Warning: SLOTNODE: FPMovement_AnimBP_C animasyon örneği sınıfındaki 'Arms' zaten var. Bu sınıf için animasyon grafiğinden kopyaları çıkarın.
+[2025.07.22-21.17.22:109][738]PIE: Sunucu oturum açtı
+[2025.07.22-21.17.22:110][738]PIE: Editörde oyna toplam başlama süresi 0,135 saniye.
+[2025.07.22-21.17.26:365][974]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.07.22-21.17.26:915][  7]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.07.22-21.17.28:732][116]LogBlueprintUserMessages: [BP_BaseDoor_C_UAID_B42E994CB280835E02_1218046819] No key or wrong key
+[2025.07.22-21.17.29:179][143]LogBlueprintUserMessages: [BP_BaseDoor_C_UAID_B42E994CB280835E02_1218046819] No key or wrong key
+[2025.07.22-21.17.33:506][401]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.07.22-21.17.33:506][401]LogWorld: BeginTearingDown for /Game/FPMovement/Maps/UEDPIE_0_MainLevel
+[2025.07.22-21.17.33:507][401]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
+[2025.07.22-21.17.33:508][401]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.07.22-21.17.33:508][401]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel
+[2025.07.22-21.17.33:512][401]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.07.22-21.17.33:514][401]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.07.22-21.17.33:532][401]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.07.22-21.17.33:532][401]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 2
+[2025.07.22-21.17.33:532][401]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
+[2025.07.22-21.17.33:534][401]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
+[2025.07.22-21.17.33:538][401]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.07.22-21.17.33:540][401]LogUObjectHash: Compacting FUObjectHashTables data took   0.43ms
+[2025.07.22-21.17.33:605][402]LogPlayLevel: Display: Destroying online subsystem :Context_1
+[2025.07.22-21.17.33:688][403]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_0
+[2025.07.22-21.17.34:500][443]LogChaosDD: Not creating Chaos Debug Draw Scene for world World_1
+[2025.07.22-21.17.35:231][483]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 350.945740
+[2025.07.22-21.17.35:442][493]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.07.22-21.17.35:442][493]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 351.135406, Update Interval: 300.820343
+[2025.07.22-21.17.49:513][337]LogShaderCompilers: Display: ================================================
+[2025.07.22-21.17.49:513][337]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.07.22-21.17.49:513][337]LogShaderCompilers: Display: Total job queries 1.779, among them cache hits 0 (0.00%), DDC hits 0 (0.00%), Duplicates 371 (20.85%)
+[2025.07.22-21.17.49:513][337]LogShaderCompilers: Display: Tracking 1.408 distinct input hashes that result in 1.059 distinct outputs (75.21%)
+[2025.07.22-21.17.49:513][337]LogShaderCompilers: Display: RAM used: 692,31 KiB of 1,60 GiB budget. Usage: 0.04%
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Shaders Compiled: 1.408
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Jobs assigned 1.408, completed 1.408 (100%)
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Average time worker was idle: 6.98 s
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Time job spent in pending queue: average 50.29 s, longest 129.84 s
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Job execution time: average 11.62 s, max 33.98 s
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Job life time (pending + execution): average 61.91 s, max 133.85
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Shader code size: average 12,81 KiB, min 1,199 KiB, max 49,172 KiB
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 169.45 s
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.27%
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Jobs were issued in 297 batches (only local compilation was used), average 4.74 jobs/batch
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Average processing rate: 8.31 jobs/sec
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Total thread time: 1.909,747 s
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Total thread preprocess time: 27,12 s
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Percentage time preprocessing: 1.42%
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Effective parallelization: 11.27 (times faster than compiling all shaders on one thread). Compare with number of workers: 12
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display:                                 TBasePassCSTLightMapPolicyHQ (compiled    1 times, average 5.37 sec, max 5.37 sec, min 5.37 sec)
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display:  TBasePassCSTDistanceFieldShadowsAndLightMapPolicyHQSkylight (compiled    1 times, average 5.24 sec, max 5.24 sec, min 5.24 sec)
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display:                                 TBasePassCSFNoLightMapPolicy (compiled    1 times, average 5.04 sec, max 5.04 sec, min 5.04 sec)
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display:                         TBasePassCSTLightMapPolicyHQSkylight (compiled    1 times, average 4.59 sec, max 4.59 sec, min 4.59 sec)
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display:                                 TBasePassCSTLightMapPolicyLQ (compiled    1 times, average 4.07 sec, max 4.07 sec, min 4.07 sec)
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display:                                        FMicropolyRasterizeCS - 40.67% of total time (compiled  260 times, average 2.99 sec, max 6.83 sec, min 0.00 sec)
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS - 11.30% of total time (compiled   68 times, average 3.17 sec, max 4.35 sec, min 2.11 sec)
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display:                                               FHWRasterizeMS - 3.59% of total time (compiled   60 times, average 1.14 sec, max 1.48 sec, min 0.80 sec)
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 2.75% of total time (compiled   54 times, average 0.97 sec, max 1.73 sec, min 0.59 sec)
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display:                                             FDebugViewModePS - 2.71% of total time (compiled   23 times, average 2.25 sec, max 3.42 sec, min 1.71 sec)
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: === Material stats ===
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Materials Cooked:        0
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Materials Translated:    150
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Material Total Translate Time: 0.14 s
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Material Translation Only: 0.05 s (34%)
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: Material Cache Hits: 0 (0%)
+[2025.07.22-21.17.49:514][337]LogShaderCompilers: Display: ================================================
+[2025.07.22-21.22.39:822][741]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 655.536072
+[2025.07.22-21.22.40:822][744]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.07.22-21.22.40:822][745]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 656.204651, Update Interval: 358.906830
+[2025.07.22-21.28.46:589][841]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1022.303528
+[2025.07.22-21.28.47:589][844]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.07.22-21.28.47:589][845]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1022.969849, Update Interval: 329.936829
+[2025.07.22-21.30.39:406][180]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Kulaklıklar (ttec AirBeat Tone Stereo), InstanceID=1
+[2025.07.22-21.30.39:626][180]LogAudioMixer: Display: StartRunningNullDevice() called, InstanceID=1
+[2025.07.22-21.30.39:626][180]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=12064
+[2025.07.22-21.30.40:626][183]LogAudioMixer: Display: StopRunningNullDevice() called, InstanceID=1
+[2025.07.22-21.30.40:628][183]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=44100, DeviceID={0.0.0.00000000}.{ce2b6036-46ba-4f7d-904f-d08e986ac155}, Name=Kulaklıklar (ttec AirBeat Tone Stereo)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=981.23
+[2025.07.22-21.30.40:629][183]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2025.07.22-21.30.40:633][183]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2025.07.22-21.30.41:026][185]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device), InstanceID=1
+[2025.07.22-21.30.41:141][185]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device), InstanceID=1
+[2025.07.22-21.30.41:215][185]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device), InstanceID=1
+[2025.07.22-21.30.41:292][185]LogAudioMixer: Display: StartRunningNullDevice() called, InstanceID=1
+[2025.07.22-21.30.41:292][185]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=12064
+[2025.07.22-21.30.41:625][186]LogAudioMixer: Display: StopRunningNullDevice() called, InstanceID=1
+[2025.07.22-21.30.41:627][186]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=8, SampleRate=96000, DeviceID={0.0.0.00000000}.{8c35c370-acc5-4294-9316-54570f7163ce}, Name=SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=34.83
+[2025.07.22-21.30.41:627][186]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=1
+[2025.07.22-21.30.41:630][186]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2025.07.22-21.30.56:235][230]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=Kulaklık (ttec AirBeat Tone Hands-Free AG Audio), InstanceID=1
+[2025.07.22-21.30.56:293][230]LogAudioMixer: Display: StartRunningNullDevice() called, InstanceID=1
+[2025.07.22-21.30.56:293][230]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=12064
+[2025.07.22-21.30.56:626][231]LogAudioMixer: Display: StopRunningNullDevice() called, InstanceID=1
+[2025.07.22-21.30.56:628][231]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=16000, DeviceID={0.0.0.00000000}.{a5bbd693-fbbd-4b25-80ba-2be83bb83fe8}, Name=Kulaklık (ttec AirBeat Tone Hands-Free AG Audio)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=14.55
+[2025.07.22-21.30.56:628][231]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2025.07.22-21.30.56:631][231]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2025.07.22-21.34.26:341][861]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1362.056519
+[2025.07.22-21.34.27:342][863]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.07.22-21.34.27:342][863]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1362.726318, Update Interval: 328.579987
+[2025.07.22-21.37.17:805][ 79]LogDebuggerCommands: Repeating last play command: Seçilen Görünüm Penceresi
+[2025.07.22-21.37.17:809][ 79]LogContentBundle: [MainLevel(Bağımsız)] Generating Streaming for 0 Content Bundles.
+[2025.07.22-21.37.17:809][ 79]LogWorldPartition: Display: GenerateStreaming for 'MainLevel' started...
+[2025.07.22-21.37.17:813][ 79]LogWorldPartition: FSpatialHashSettings::UpdateSettings : UseAlignedGridLevels = 1, SnapNonAlignedGridLevelsToLowerLevels = 1, PlaceSmallActorsUsingLocation = 0, PlacePartitionActorsUsingLocation = 1
+[2025.07.22-21.37.17:814][ 79]LogWorldPartition: Display: GenerateStreaming for 'MainLevel' took 4.193 ms (total: 9.316 ms)
+[2025.07.22-21.37.17:814][ 79]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.07.22-21.37.17:814][ 79]LogPlayLevel: Creating play world package: /Game/FPMovement/Maps/UEDPIE_0_MainLevel
+[2025.07.22-21.37.17:821][ 79]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007123s)
+[2025.07.22-21.37.17:821][ 79]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FPMovement/Maps/MainLevel.MainLevel to /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel (0.007178s)
+[2025.07.22-21.37.17:840][ 79]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2025.07.22-21.37.17:841][ 79]LogChaosDD: Creating Chaos Debug Draw Scene for world MainLevel
+[2025.07.22-21.37.17:842][ 79]LogWorldPartition: ULevel::OnLevelLoaded(MainLevel)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2025.07.22-21.37.17:842][ 79]LogWorldPartition: Display: WorldPartition initialize started...
+[2025.07.22-21.37.17:842][ 79]LogWorldPartition: UWorldPartition::Initialize : World = /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2025.07.22-21.37.17:842][ 79]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2025.07.22-21.37.17:845][ 79]LogWorldPartition: Display: WorldPartition initialize took 2.225 ms (total: 406.155 ms)
+[2025.07.22-21.37.17:845][ 79]LogPlayLevel: PIE: World Init took: (0.003832s)
+[2025.07.22-21.37.17:845][ 79]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2025.07.22-21.37.17:845][ 79]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.07.22-21.37.17:845][ 79]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.07.22-21.37.17:845][ 79]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.07.22-21.37.17:845][ 79]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.07.22-21.37.17:846][ 79]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2025.07.22-21.37.17:846][ 79]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.07.22-21.37.17:846][ 79]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2025.07.22-21.37.17:846][ 79]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.07.22-21.37.17:846][ 79]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.07.22-21.37.17:846][ 79]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.07.22-21.37.17:846][ 79]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.07.22-21.37.17:848][ 79]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.07.22-21.37.17:862][ 79]LogAudioMixer: Display: Using Audio Hardware Device Kulaklık (ttec AirBeat Tone Hands-Free AG Audio)
+[2025.07.22-21.37.17:863][ 79]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.07.22-21.37.17:863][ 79]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.07.22-21.37.17:863][ 79]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.07.22-21.37.17:864][ 79]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=3
+[2025.07.22-21.37.17:864][ 79]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=3
+[2025.07.22-21.37.17:865][ 79]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=3
+[2025.07.22-21.37.17:865][ 79]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=3
+[2025.07.22-21.37.17:865][ 79]LogInit: FAudioDevice initialized with ID 3.
+[2025.07.22-21.37.17:865][ 79]LogAudio: Display: Audio Device (ID: 3) registered with world 'MainLevel'.
+[2025.07.22-21.37.17:865][ 79]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 3
+[2025.07.22-21.37.17:868][ 79]LogLoad: Game class is 'BP_FPMovementMode_C'
+[2025.07.22-21.37.17:871][ 79]LogWorld: Bringing World /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 60) at 2025.07.23-00.37.17
+[2025.07.22-21.37.17:871][ 79]LogWorld: Bringing up level for play took: 0.002406
+[2025.07.22-21.37.17:873][ 79]LogOnline: OSS: Created online subsystem instance for: :Context_4
+[2025.07.22-21.37.17:874][ 79]AnimBlueprintLog: Warning: SLOTNODE: FPMovement_AnimBP_C animasyon örneği sınıfındaki 'Arms' zaten var. Bu sınıf için animasyon grafiğinden kopyaları çıkarın.
+[2025.07.22-21.37.17:878][ 79]PIE: Sunucu oturum açtı
+[2025.07.22-21.37.17:879][ 79]PIE: Editörde oyna toplam başlama süresi 0,069 saniye.
+[2025.07.22-21.37.19:479][164]Cmd: LevelEditor.ToggleImmersive
+[2025.07.22-21.37.19:504][164]LogSlate: Took 0.000211 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2025.07.22-21.37.19:633][166]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.07.22-21.37.22:103][310]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.37.33:184][953]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.07.22-21.37.33:184][953]LogWorld: BeginTearingDown for /Game/FPMovement/Maps/UEDPIE_0_MainLevel
+[2025.07.22-21.37.33:185][953]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
+[2025.07.22-21.37.33:185][953]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.07.22-21.37.33:185][953]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel
+[2025.07.22-21.37.33:192][953]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.07.22-21.37.33:194][953]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.07.22-21.37.33:216][953]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.07.22-21.37.33:217][953]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 3
+[2025.07.22-21.37.33:217][953]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2025.07.22-21.37.33:219][953]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2025.07.22-21.37.33:224][953]LogUObjectHash: Compacting FUObjectHashTables data took   0.45ms
+[2025.07.22-21.37.33:283][954]LogPlayLevel: Display: Destroying online subsystem :Context_4
+[2025.07.22-21.37.40:824][361]LogDebuggerCommands: Repeating last play command: Seçilen Görünüm Penceresi
+[2025.07.22-21.37.40:829][361]LogContentBundle: [MainLevel(Bağımsız)] Generating Streaming for 0 Content Bundles.
+[2025.07.22-21.37.40:829][361]LogWorldPartition: Display: GenerateStreaming for 'MainLevel' started...
+[2025.07.22-21.37.40:831][361]LogWorldPartition: FSpatialHashSettings::UpdateSettings : UseAlignedGridLevels = 1, SnapNonAlignedGridLevelsToLowerLevels = 1, PlaceSmallActorsUsingLocation = 0, PlacePartitionActorsUsingLocation = 1
+[2025.07.22-21.37.40:832][361]LogWorldPartition: Display: GenerateStreaming for 'MainLevel' took 2.966 ms (total: 12.282 ms)
+[2025.07.22-21.37.40:832][361]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.07.22-21.37.40:864][361]LogPlayLevel: Creating play world package: /Game/FPMovement/Maps/UEDPIE_0_MainLevel
+[2025.07.22-21.37.40:871][361]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007067s)
+[2025.07.22-21.37.40:872][361]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FPMovement/Maps/MainLevel.MainLevel to /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel (0.007125s)
+[2025.07.22-21.37.40:902][361]LogUObjectHash: Compacting FUObjectHashTables data took   0.51ms
+[2025.07.22-21.37.40:903][361]LogChaosDD: Creating Chaos Debug Draw Scene for world MainLevel
+[2025.07.22-21.37.40:905][361]LogWorldPartition: ULevel::OnLevelLoaded(MainLevel)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2025.07.22-21.37.40:905][361]LogWorldPartition: Display: WorldPartition initialize started...
+[2025.07.22-21.37.40:905][361]LogWorldPartition: UWorldPartition::Initialize : World = /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2025.07.22-21.37.40:905][361]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2025.07.22-21.37.40:907][361]LogWorldPartition: Display: WorldPartition initialize took 2.123 ms (total: 408.279 ms)
+[2025.07.22-21.37.40:907][361]LogPlayLevel: PIE: World Init took: (0.003670s)
+[2025.07.22-21.37.40:908][361]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2025.07.22-21.37.40:908][361]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.07.22-21.37.40:908][361]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.07.22-21.37.40:908][361]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.07.22-21.37.40:908][361]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.07.22-21.37.40:908][361]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2025.07.22-21.37.40:908][361]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.07.22-21.37.40:908][361]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2025.07.22-21.37.40:908][361]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.07.22-21.37.40:908][361]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.07.22-21.37.40:908][361]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.07.22-21.37.40:908][361]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.07.22-21.37.40:910][361]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.07.22-21.37.40:924][361]LogAudioMixer: Display: Using Audio Hardware Device Kulaklık (ttec AirBeat Tone Hands-Free AG Audio)
+[2025.07.22-21.37.40:924][361]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.07.22-21.37.40:924][361]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.07.22-21.37.40:924][361]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.07.22-21.37.40:924][361]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=4
+[2025.07.22-21.37.40:924][361]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=4
+[2025.07.22-21.37.40:927][361]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=4
+[2025.07.22-21.37.40:927][361]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=4
+[2025.07.22-21.37.40:927][361]LogInit: FAudioDevice initialized with ID 4.
+[2025.07.22-21.37.40:927][361]LogAudio: Display: Audio Device (ID: 4) registered with world 'MainLevel'.
+[2025.07.22-21.37.40:927][361]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 4
+[2025.07.22-21.37.40:929][361]LogLoad: Game class is 'BP_FPMovementMode_C'
+[2025.07.22-21.37.40:931][361]LogWorld: Bringing World /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 60) at 2025.07.23-00.37.40
+[2025.07.22-21.37.40:932][361]LogWorld: Bringing up level for play took: 0.002457
+[2025.07.22-21.37.40:935][361]LogOnline: OSS: Created online subsystem instance for: :Context_5
+[2025.07.22-21.37.40:936][361]AnimBlueprintLog: Warning: SLOTNODE: FPMovement_AnimBP_C animasyon örneği sınıfındaki 'Arms' zaten var. Bu sınıf için animasyon grafiğinden kopyaları çıkarın.
+[2025.07.22-21.37.40:938][361]PIE: Sunucu oturum açtı
+[2025.07.22-21.37.40:940][361]PIE: Editörde oyna toplam başlama süresi 0,111 saniye.
+[2025.07.22-21.38.06:296][801]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2025.07.22-21.38.06:296][801]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2025.07.22-21.38.08:509][934]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2025.07.22-21.38.08:509][934]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CapturePermanently
+[2025.07.22-21.38.10:726][ 67]LogBlueprintUserMessages: [BP_BaseDoor_C_UAID_B42E994CB280835E02_1895132820] No key or wrong key
+[2025.07.22-21.38.11:225][ 97]LogBlueprintUserMessages: [BP_BaseDoor_C_UAID_B42E994CB280835E02_1895132820] No key or wrong key
+[2025.07.22-21.38.14:893][317]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.38.15:743][368]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.38.16:144][392]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.38.16:343][404]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.38.17:410][468]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.38.18:410][528]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.38.18:593][539]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.38.18:742][548]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.38.18:926][559]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.38.19:160][573]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.38.19:360][585]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.38.19:726][607]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.38.19:893][617]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.38.20:060][627]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.38.21:144][692]LogBlueprintUserMessages: [BP_BaseDoor_C_UAID_B42E994CB280835E02_1895132820] No key or wrong key
+[2025.07.22-21.38.21:360][705]LogBlueprintUserMessages: [BP_BaseDoor_C_UAID_B42E994CB280835E02_1895132820] No key or wrong key
+[2025.07.22-21.38.21:543][716]LogBlueprintUserMessages: [BP_BaseDoor_C_UAID_B42E994CB280835E02_1895132820] No key or wrong key
+[2025.07.22-21.38.23:926][859]LogBlueprintUserMessages: [BP_FPMovementPlayer_C_0] You don't have a flashlight!
+[2025.07.22-21.38.26:803][ 31]LogBlueprintUserMessages: [BP_BaseDoor_C_UAID_B42E994CB280835E02_1218046819] No key or wrong key
+[2025.07.22-21.38.27:187][ 54]LogBlueprintUserMessages: [BP_BaseDoor_C_UAID_B42E994CB280835E02_1218046819] No key or wrong key
+[2025.07.22-21.38.42:769][987]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.07.22-21.38.42:769][987]LogWorld: BeginTearingDown for /Game/FPMovement/Maps/UEDPIE_0_MainLevel
+[2025.07.22-21.38.42:770][987]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
+[2025.07.22-21.38.42:770][987]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.07.22-21.38.42:770][987]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel
+[2025.07.22-21.38.42:774][987]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.07.22-21.38.42:776][987]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.07.22-21.38.42:789][987]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.07.22-21.38.42:791][987]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 4
+[2025.07.22-21.38.42:791][987]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2025.07.22-21.38.42:793][987]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2025.07.22-21.38.42:799][987]LogUObjectHash: Compacting FUObjectHashTables data took   0.42ms
+[2025.07.22-21.38.42:851][988]LogPlayLevel: Display: Destroying online subsystem :Context_5
+[2025.07.22-21.38.43:587][ 29]Cmd: POLY SELECT ADJACENT WALLS
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: ================================================
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Total job queries 1.851, among them cache hits 1 (0.05%), DDC hits 0 (0.00%), Duplicates 371 (20.04%)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Tracking 1.479 distinct input hashes that result in 1.108 distinct outputs (74.92%)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: RAM used: 732,52 KiB of 1,60 GiB budget. Usage: 0.04%
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Shaders Compiled: 1.479
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Jobs assigned 1.479, completed 1.479 (100%)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Average time worker was idle: 55.31 s
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Time job spent in pending queue: average 47.88 s, longest 129.84 s
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Job execution time: average 11.21 s, max 33.98 s
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Job life time (pending + execution): average 59.09 s, max 133.85
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Shader code size: average 12,672 KiB, min 1,199 KiB, max 49,172 KiB
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 176.66 s
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.26%
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Jobs were issued in 314 batches (only local compilation was used), average 4.71 jobs/batch
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Average processing rate: 8.37 jobs/sec
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Total thread time: 1.944,691 s
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Total thread preprocess time: 28,224 s
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Percentage time preprocessing: 1.45%
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Effective parallelization: 11.01 (times faster than compiling all shaders on one thread). Compare with number of workers: 12
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display:                                 TBasePassCSTLightMapPolicyHQ (compiled    1 times, average 5.37 sec, max 5.37 sec, min 5.37 sec)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display:  TBasePassCSTDistanceFieldShadowsAndLightMapPolicyHQSkylight (compiled    1 times, average 5.24 sec, max 5.24 sec, min 5.24 sec)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display:                                 TBasePassCSFNoLightMapPolicy (compiled    1 times, average 5.04 sec, max 5.04 sec, min 5.04 sec)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display:                         TBasePassCSTLightMapPolicyHQSkylight (compiled    1 times, average 4.59 sec, max 4.59 sec, min 4.59 sec)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display:                                 TBasePassCSTLightMapPolicyLQ (compiled    1 times, average 4.07 sec, max 4.07 sec, min 4.07 sec)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display:                                        FMicropolyRasterizeCS - 39.94% of total time (compiled  260 times, average 2.99 sec, max 6.83 sec, min 0.00 sec)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display:                           FRenderVolumetricCloudRenderViewCS - 11.09% of total time (compiled   68 times, average 3.17 sec, max 4.35 sec, min 2.11 sec)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display:                                               FHWRasterizeMS - 3.53% of total time (compiled   60 times, average 1.14 sec, max 1.48 sec, min 0.80 sec)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 2.80% of total time (compiled   57 times, average 0.96 sec, max 1.73 sec, min 0.57 sec)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display:                                             FDebugViewModePS - 2.77% of total time (compiled   24 times, average 2.24 sec, max 3.42 sec, min 1.71 sec)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: === Material stats ===
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Materials Cooked:        0
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Materials Translated:    150
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Material Total Translate Time: 0.14 s
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Material Translation Only: 0.05 s (34%)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: Material Cache Hits: 0 (0%)
+[2025.07.22-21.38.50:081][413]LogShaderCompilers: Display: ================================================
+[2025.07.22-21.38.51:714][511]Cmd: POLY SELECT ADJACENT WALLS
+[2025.07.22-21.38.57:119][803]Cmd: DELETE
+[2025.07.22-21.38.57:119][803]Cmd: ACTOR DELETE
+[2025.07.22-21.38.57:127][803]LogEditorActor: Deleted Actor: StaticMeshActor
+[2025.07.22-21.38.57:143][803]LogUObjectHash: Compacting FUObjectHashTables data took   0.40ms
+[2025.07.22-21.38.57:144][803]LogEditorActor: Deleted 1 Actors (0.024 secs)
+[2025.07.22-21.38.58:337][869]Cmd: DELETE
+[2025.07.22-21.38.58:337][869]Cmd: ACTOR DELETE
+[2025.07.22-21.38.58:339][869]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.38.58:350][869]LogUObjectHash: Compacting FUObjectHashTables data took   0.29ms
+[2025.07.22-21.38.58:352][869]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2025.07.22-21.39.00:431][989]Cmd: DELETE
+[2025.07.22-21.39.00:431][989]Cmd: ACTOR DELETE
+[2025.07.22-21.39.00:433][989]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.00:456][989]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2025.07.22-21.39.00:458][989]LogEditorActor: Deleted 1 Actors (0.026 secs)
+[2025.07.22-21.39.03:565][165]Cmd: DELETE
+[2025.07.22-21.39.03:565][165]Cmd: ACTOR DELETE
+[2025.07.22-21.39.03:566][165]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.03:591][165]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2025.07.22-21.39.03:593][165]LogEditorActor: Deleted 1 Actors (0.027 secs)
+[2025.07.22-21.39.09:255][477]Cmd: DELETE
+[2025.07.22-21.39.09:255][477]Cmd: ACTOR DELETE
+[2025.07.22-21.39.09:257][477]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.09:269][477]LogUObjectHash: Compacting FUObjectHashTables data took   0.30ms
+[2025.07.22-21.39.09:271][477]LogEditorActor: Deleted 1 Actors (0.016 secs)
+[2025.07.22-21.39.10:574][543]Cmd: DELETE
+[2025.07.22-21.39.10:574][543]Cmd: ACTOR DELETE
+[2025.07.22-21.39.10:576][543]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.10:606][543]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2025.07.22-21.39.10:608][543]LogEditorActor: Deleted 1 Actors (0.034 secs)
+[2025.07.22-21.39.19:547][ 26]Cmd: DELETE
+[2025.07.22-21.39.19:547][ 26]Cmd: ACTOR DELETE
+[2025.07.22-21.39.19:549][ 26]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.19:562][ 26]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2025.07.22-21.39.19:564][ 26]LogEditorActor: Deleted 1 Actors (0.017 secs)
+[2025.07.22-21.39.21:269][122]Cmd: DELETE
+[2025.07.22-21.39.21:269][122]Cmd: ACTOR DELETE
+[2025.07.22-21.39.21:271][122]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.21:290][122]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2025.07.22-21.39.21:292][122]LogEditorActor: Deleted 1 Actors (0.023 secs)
+[2025.07.22-21.39.23:022][212]Cmd: DELETE
+[2025.07.22-21.39.23:022][212]Cmd: ACTOR DELETE
+[2025.07.22-21.39.23:023][212]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.23:039][212]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2025.07.22-21.39.23:041][212]LogEditorActor: Deleted 1 Actors (0.019 secs)
+[2025.07.22-21.39.23:723][247]Cmd: DELETE
+[2025.07.22-21.39.23:723][247]Cmd: ACTOR DELETE
+[2025.07.22-21.39.23:725][247]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.23:746][247]LogUObjectHash: Compacting FUObjectHashTables data took   0.35ms
+[2025.07.22-21.39.23:748][247]LogEditorActor: Deleted 1 Actors (0.025 secs)
+[2025.07.22-21.39.24:266][272]Cmd: DELETE
+[2025.07.22-21.39.24:267][272]Cmd: ACTOR DELETE
+[2025.07.22-21.39.24:268][272]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.24:292][272]LogUObjectHash: Compacting FUObjectHashTables data took   0.27ms
+[2025.07.22-21.39.24:294][272]LogEditorActor: Deleted 1 Actors (0.027 secs)
+[2025.07.22-21.39.25:426][332]Cmd: DELETE
+[2025.07.22-21.39.25:426][332]Cmd: ACTOR DELETE
+[2025.07.22-21.39.25:428][332]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.25:439][332]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2025.07.22-21.39.25:441][332]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2025.07.22-21.39.28:266][483]Cmd: DELETE
+[2025.07.22-21.39.28:266][483]Cmd: ACTOR DELETE
+[2025.07.22-21.39.28:268][483]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.28:281][483]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2025.07.22-21.39.28:283][483]LogEditorActor: Deleted 1 Actors (0.017 secs)
+[2025.07.22-21.39.35:666][883]Cmd: DELETE
+[2025.07.22-21.39.35:666][883]Cmd: ACTOR DELETE
+[2025.07.22-21.39.35:669][883]LogEditorActor: Deleted Actor: StaticMeshActor
+[2025.07.22-21.39.35:694][883]LogUObjectHash: Compacting FUObjectHashTables data took   0.28ms
+[2025.07.22-21.39.35:696][883]LogEditorActor: Deleted 1 Actors (0.030 secs)
+[2025.07.22-21.39.36:613][932]Cmd: DELETE
+[2025.07.22-21.39.36:613][932]Cmd: ACTOR DELETE
+[2025.07.22-21.39.36:615][932]LogEditorActor: Deleted Actor: BP_BaseNote_C
+[2025.07.22-21.39.36:626][932]LogUObjectHash: Compacting FUObjectHashTables data took   0.37ms
+[2025.07.22-21.39.36:628][932]LogEditorActor: Deleted 1 Actors (0.016 secs)
+[2025.07.22-21.39.37:171][958]Cmd: DELETE
+[2025.07.22-21.39.37:171][958]Cmd: ACTOR DELETE
+[2025.07.22-21.39.37:173][958]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.37:191][958]LogUObjectHash: Compacting FUObjectHashTables data took   0.26ms
+[2025.07.22-21.39.37:193][958]LogEditorActor: Deleted 1 Actors (0.022 secs)
+[2025.07.22-21.39.38:014][999]Cmd: DELETE
+[2025.07.22-21.39.38:014][999]Cmd: ACTOR DELETE
+[2025.07.22-21.39.38:015][999]LogEditorActor: Deleted Actor: StaticMeshActor
+[2025.07.22-21.39.38:032][999]LogUObjectHash: Compacting FUObjectHashTables data took   0.29ms
+[2025.07.22-21.39.38:034][999]LogEditorActor: Deleted 1 Actors (0.021 secs)
+[2025.07.22-21.39.38:566][ 26]Cmd: DELETE
+[2025.07.22-21.39.38:566][ 26]Cmd: ACTOR DELETE
+[2025.07.22-21.39.38:568][ 26]LogEditorActor: Deleted Actor: BP_BaseNote_C
+[2025.07.22-21.39.38:605][ 26]LogUObjectHash: Compacting FUObjectHashTables data took   0.55ms
+[2025.07.22-21.39.38:607][ 26]LogEditorActor: Deleted 1 Actors (0.042 secs)
+[2025.07.22-21.39.39:027][ 45]Cmd: DELETE
+[2025.07.22-21.39.39:027][ 45]Cmd: ACTOR DELETE
+[2025.07.22-21.39.39:029][ 45]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.39:041][ 45]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2025.07.22-21.39.39:043][ 45]LogEditorActor: Deleted 1 Actors (0.016 secs)
+[2025.07.22-21.39.40:746][131]Cmd: DELETE
+[2025.07.22-21.39.40:746][131]Cmd: ACTOR DELETE
+[2025.07.22-21.39.40:748][131]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.40:759][131]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2025.07.22-21.39.40:761][131]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2025.07.22-21.39.41:742][183]Cmd: DELETE
+[2025.07.22-21.39.41:742][183]Cmd: ACTOR DELETE
+[2025.07.22-21.39.41:744][183]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.41:754][183]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2025.07.22-21.39.41:756][183]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2025.07.22-21.39.42:279][210]Cmd: DELETE
+[2025.07.22-21.39.42:279][210]Cmd: ACTOR DELETE
+[2025.07.22-21.39.42:280][210]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.42:310][210]LogUObjectHash: Compacting FUObjectHashTables data took   0.26ms
+[2025.07.22-21.39.42:312][210]LogEditorActor: Deleted 1 Actors (0.033 secs)
+[2025.07.22-21.39.43:617][281]Cmd: DELETE
+[2025.07.22-21.39.43:617][281]Cmd: ACTOR DELETE
+[2025.07.22-21.39.43:619][281]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.43:631][281]LogUObjectHash: Compacting FUObjectHashTables data took   0.34ms
+[2025.07.22-21.39.43:633][281]LogEditorActor: Deleted 1 Actors (0.016 secs)
+[2025.07.22-21.39.47:060][465]Cmd: DELETE
+[2025.07.22-21.39.47:060][465]Cmd: ACTOR DELETE
+[2025.07.22-21.39.47:064][465]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.47:091][465]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2025.07.22-21.39.47:093][465]LogEditorActor: Deleted 1 Actors (0.031 secs)
+[2025.07.22-21.39.51:065][679]Cmd: DELETE
+[2025.07.22-21.39.51:065][679]Cmd: ACTOR DELETE
+[2025.07.22-21.39.51:067][679]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.51:099][679]LogUObjectHash: Compacting FUObjectHashTables data took   0.35ms
+[2025.07.22-21.39.51:101][679]LogEditorActor: Deleted 1 Actors (0.036 secs)
+[2025.07.22-21.39.52:095][730]Cmd: DELETE
+[2025.07.22-21.39.52:095][730]Cmd: ACTOR DELETE
+[2025.07.22-21.39.52:096][730]LogEditorActor: Deleted Actor: TextRenderActor
+[2025.07.22-21.39.52:114][730]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2025.07.22-21.39.52:116][730]LogEditorActor: Deleted 1 Actors (0.021 secs)
+[2025.07.22-21.39.56:202][958]Cmd: DELETE
+[2025.07.22-21.39.56:202][958]Cmd: ACTOR DELETE
+[2025.07.22-21.39.56:204][958]LogEditorActor: Deleted Actor: StaticMeshActor
+[2025.07.22-21.39.56:214][958]LogUObjectHash: Compacting FUObjectHashTables data took   0.23ms
+[2025.07.22-21.39.56:216][958]LogEditorActor: Deleted 1 Actors (0.014 secs)
+[2025.07.22-21.39.58:141][ 53]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2025.07.22-21.40.02:541][270]Cmd: TRANSACTION UNDO
+[2025.07.22-21.40.02:541][270]LogEditorTransaction: Undo Öğelere Tıklama
+[2025.07.22-21.40.02:802][273]Cmd: TRANSACTION UNDO
+[2025.07.22-21.40.02:802][273]LogEditorTransaction: Undo Öğelere Tıklama
+[2025.07.22-21.40.03:014][275]Cmd: TRANSACTION UNDO
+[2025.07.22-21.40.03:014][275]LogEditorTransaction: Undo Öğelere Tıklama
+[2025.07.22-21.40.04:406][348]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2025.07.22-21.40.07:244][509]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2025.07.22-21.40.08:057][548]Cmd: DELETE
+[2025.07.22-21.40.08:057][548]Cmd: ACTOR DELETE
+[2025.07.22-21.40.08:059][548]LogEditorActor: Deleted Actor: StaticMeshActor
+[2025.07.22-21.40.08:082][548]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2025.07.22-21.40.08:084][548]LogEditorActor: Deleted 1 Actors (0.027 secs)
+[2025.07.22-21.40.08:605][570]Cmd: DELETE
+[2025.07.22-21.40.08:605][570]Cmd: ACTOR DELETE
+[2025.07.22-21.40.08:606][570]LogEditorActor: Deleted Actor: StaticMeshActor
+[2025.07.22-21.40.08:631][570]LogUObjectHash: Compacting FUObjectHashTables data took   0.31ms
+[2025.07.22-21.40.08:634][570]LogEditorActor: Deleted 1 Actors (0.029 secs)
+[2025.07.22-21.40.09:148][593]Cmd: DELETE
+[2025.07.22-21.40.09:148][593]Cmd: ACTOR DELETE
+[2025.07.22-21.40.09:150][593]LogEditorActor: Deleted Actor: StaticMeshActor
+[2025.07.22-21.40.09:160][593]LogUObjectHash: Compacting FUObjectHashTables data took   0.27ms
+[2025.07.22-21.40.09:163][593]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2025.07.22-21.40.10:139][641]LogStreaming: Display: FlushAsyncLoading(450): 1 QueuedPackages, 0 AsyncPackages
+[2025.07.22-21.40.12:419][765]LogDebuggerCommands: Repeating last play command: Seçilen Görünüm Penceresi
+[2025.07.22-21.40.12:423][765]LogContentBundle: [MainLevel(Bağımsız)] Generating Streaming for 0 Content Bundles.
+[2025.07.22-21.40.12:423][765]LogWorldPartition: Display: GenerateStreaming for 'MainLevel' started...
+[2025.07.22-21.40.12:428][765]LogWorldPartition: FSpatialHashSettings::UpdateSettings : UseAlignedGridLevels = 1, SnapNonAlignedGridLevelsToLowerLevels = 1, PlaceSmallActorsUsingLocation = 0, PlacePartitionActorsUsingLocation = 1
+[2025.07.22-21.40.12:428][765]LogWorldPartition: Display: GenerateStreaming for 'MainLevel' took 5.253 ms (total: 17.536 ms)
+[2025.07.22-21.40.12:429][765]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.07.22-21.40.12:429][765]LogPlayLevel: Creating play world package: /Game/FPMovement/Maps/UEDPIE_0_MainLevel
+[2025.07.22-21.40.12:434][765]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005867s)
+[2025.07.22-21.40.12:434][765]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FPMovement/Maps/MainLevel.MainLevel to /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel (0.005909s)
+[2025.07.22-21.40.12:444][765]LogUObjectHash: Compacting FUObjectHashTables data took   0.44ms
+[2025.07.22-21.40.12:446][765]LogChaosDD: Creating Chaos Debug Draw Scene for world MainLevel
+[2025.07.22-21.40.12:448][765]LogWorldPartition: ULevel::OnLevelLoaded(MainLevel)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2025.07.22-21.40.12:448][765]LogWorldPartition: Display: WorldPartition initialize started...
+[2025.07.22-21.40.12:448][765]LogWorldPartition: UWorldPartition::Initialize : World = /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2025.07.22-21.40.12:448][765]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2025.07.22-21.40.12:450][765]LogWorldPartition: Display: WorldPartition initialize took 2.148 ms (total: 410.427 ms)
+[2025.07.22-21.40.12:450][765]LogPlayLevel: PIE: World Init took: (0.003767s)
+[2025.07.22-21.40.12:451][765]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2025.07.22-21.40.12:451][765]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.07.22-21.40.12:451][765]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.07.22-21.40.12:451][765]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.07.22-21.40.12:451][765]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.07.22-21.40.12:451][765]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2025.07.22-21.40.12:451][765]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.07.22-21.40.12:451][765]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2025.07.22-21.40.12:451][765]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.07.22-21.40.12:451][765]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.07.22-21.40.12:451][765]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.07.22-21.40.12:451][765]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.07.22-21.40.12:453][765]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.07.22-21.40.12:469][765]LogAudioMixer: Display: Using Audio Hardware Device Kulaklık (ttec AirBeat Tone Hands-Free AG Audio)
+[2025.07.22-21.40.12:469][765]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.07.22-21.40.12:469][765]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.07.22-21.40.12:469][765]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.07.22-21.40.12:470][765]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=5
+[2025.07.22-21.40.12:471][765]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=5
+[2025.07.22-21.40.12:473][765]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=5
+[2025.07.22-21.40.12:473][765]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=5
+[2025.07.22-21.40.12:473][765]LogInit: FAudioDevice initialized with ID 5.
+[2025.07.22-21.40.12:473][765]LogAudio: Display: Audio Device (ID: 5) registered with world 'MainLevel'.
+[2025.07.22-21.40.12:473][765]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 5
+[2025.07.22-21.40.12:475][765]LogLoad: Game class is 'BP_FPMovementMode_C'
+[2025.07.22-21.40.12:478][765]LogWorld: Bringing World /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel up for play (max tick rate 60) at 2025.07.23-00.40.12
+[2025.07.22-21.40.12:478][765]LogWorld: Bringing up level for play took: 0.002032
+[2025.07.22-21.40.12:480][765]LogOnline: OSS: Created online subsystem instance for: :Context_6
+[2025.07.22-21.40.12:481][765]AnimBlueprintLog: Warning: SLOTNODE: FPMovement_AnimBP_C animasyon örneği sınıfındaki 'Arms' zaten var. Bu sınıf için animasyon grafiğinden kopyaları çıkarın.
+[2025.07.22-21.40.12:484][765]PIE: Sunucu oturum açtı
+[2025.07.22-21.40.12:485][765]PIE: Editörde oyna toplam başlama süresi 0,063 saniye.
+[2025.07.22-21.40.18:708][134]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1714.420654
+[2025.07.22-21.40.18:892][144]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.07.22-21.40.18:892][144]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1714.587524, Update Interval: 349.804382
+[2025.07.22-21.40.20:907][265]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.07.22-21.40.21:857][322]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.07.22-21.40.21:875][323]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.07.22-21.40.22:156][340]LogRenderer: Display: Invalidated clipmap due to WPO threshold change. This can occur due to resolution or FOV changes.
+[2025.07.22-21.40.22:865][380]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.07.22-21.40.22:865][380]LogWorld: BeginTearingDown for /Game/FPMovement/Maps/UEDPIE_0_MainLevel
+[2025.07.22-21.40.22:865][380]LogWorld: UWorld::CleanupWorld for MainLevel, bSessionEnded=true, bCleanupResources=true
+[2025.07.22-21.40.22:866][380]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.07.22-21.40.22:866][380]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/FPMovement/Maps/UEDPIE_0_MainLevel.MainLevel
+[2025.07.22-21.40.22:870][380]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.07.22-21.40.22:872][380]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.07.22-21.40.22:909][380]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.07.22-21.40.22:909][380]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 5
+[2025.07.22-21.40.22:909][380]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2025.07.22-21.40.22:911][380]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2025.07.22-21.40.22:917][380]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2025.07.22-21.40.22:981][381]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2025.07.22-21.40.55:875][839]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2025.07.22-21.40.55:881][839]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/__ExternalActors__/FPMovement/Maps/MainLevel/D/II/R3FADA0KBBCN0FTDTECA33_Auto1
+[2025.07.22-21.40.55:881][839]LogSavePackage: Moving '../../../../../../Users/Metesd/Documents/Unreal Projects/UnrealGameDemo/Saved/R3FADA0KBBCN0FTDTECA33_Auto1572A5149465950C70F8133BADE9831AF.tmp' to '../../../../../../Users/Metesd/Documents/Unreal Projects/UnrealGameDemo/Saved/Autosaves/Game/__ExternalActors__/FPMovement/Maps/MainLevel/D/II/R3FADA0KBBCN0FTDTECA33_Auto1.uasset'
+[2025.07.22-21.40.55:885][839]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/FPMovement/Maps/MainLevel' took 0.046
+[2025.07.22-21.40.55:885][839]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.046
+[2025.07.22-21.46.11:203][786]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device), InstanceID=1
+[2025.07.22-21.46.11:211][786]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device), InstanceID=1
+[2025.07.22-21.46.11:319][786]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device), InstanceID=1
+[2025.07.22-21.46.11:323][786]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device), InstanceID=1
+[2025.07.22-21.46.11:501][786]LogAudioMixer: Display: StartRunningNullDevice() called, InstanceID=1
+[2025.07.22-21.46.11:501][786]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=12064
+[2025.07.22-21.46.11:598][787]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device), InstanceID=1
+[2025.07.22-21.46.11:605][787]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device), InstanceID=1
+[2025.07.22-21.46.11:807][787]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device), InstanceID=1
+[2025.07.22-21.46.11:816][787]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device), InstanceID=1
+[2025.07.22-21.46.11:834][787]LogAudioMixer: Display: StopRunningNullDevice() called, InstanceID=1
+[2025.07.22-21.46.11:836][787]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=8, SampleRate=96000, DeviceID={0.0.0.00000000}.{8c35c370-acc5-4294-9316-54570f7163ce}, Name=SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=29.79
+[2025.07.22-21.46.11:836][787]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=1
+[2025.07.22-21.46.11:837][787]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2025.07.22-21.46.12:167][788]LogAudioMixer: Display: StartRunningNullDevice() called, InstanceID=1
+[2025.07.22-21.46.12:168][788]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=12064
+[2025.07.22-21.46.12:501][789]LogAudioMixer: Display: StopRunningNullDevice() called, InstanceID=1
+[2025.07.22-21.46.12:503][789]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=8, SampleRate=96000, DeviceID={0.0.0.00000000}.{8c35c370-acc5-4294-9316-54570f7163ce}, Name=SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=71.90
+[2025.07.22-21.46.12:503][789]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=1
+[2025.07.22-21.46.12:506][789]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2025.07.22-21.46.53:183][911]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2108.895996
+[2025.07.22-21.46.54:182][914]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.07.22-21.46.54:182][915]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2109.562012, Update Interval: 317.148346
