@@ -2676,3 +2676,24 @@ LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
 [2025.07.22-21.46.53:183][911]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2108.895996
 [2025.07.22-21.46.54:182][914]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
 [2025.07.22-21.46.54:182][915]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2109.562012, Update Interval: 317.148346
+[2025.07.22-21.52.52:226][989]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2467.939697
+[2025.07.22-21.52.53:227][991]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.07.22-21.52.53:227][991]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2468.607422, Update Interval: 346.279480
+[2025.07.22-21.56.44:430][787]LogUObjectHash: Compacting FUObjectHashTables data took   0.41ms
+[2025.07.22-21.56.45:130][787]LogSlate: Window 'İçeriği Kaydet' being destroyed
+[2025.07.22-21.56.45:151][787]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.07.22-21.56.45:244][787]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2025.07.22-21.56.45:255][787]LogUObjectHash: Compacting FUObjectHashTables data took   0.33ms
+[2025.07.22-21.56.45:266][787]LogUObjectHash: Compacting FUObjectHashTables data took   0.33ms
+[2025.07.22-21.56.45:272][787]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/FPMovement/Maps/MainLevel/D/II/R3FADA0KBBCN0FTDTECA33
+[2025.07.22-21.56.45:273][787]LogSavePackage: Moving '../../../../../../Users/Metesd/Documents/Unreal Projects/UnrealGameDemo/Saved/R3FADA0KBBCN0FTDTECA33BB70EC6E43860727ECB5D19131E6F4DE.tmp' to '../../../../../../Users/Metesd/Documents/Unreal Projects/UnrealGameDemo/Content/__ExternalActors__/FPMovement/Maps/MainLevel/D/II/R3FADA0KBBCN0FTDTECA33.uasset'
+[2025.07.22-21.56.45:295][787]LogFileHelpers: InternalPromptForCheckoutAndSave took 144.304 ms
+[2025.07.22-21.56.45:357][787]LogContentValidation: Display: Starting to validate 1 assets
+[2025.07.22-21.56.45:357][787]LogContentValidation: Enabled validators:
+[2025.07.22-21.56.45:357][787]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2025.07.22-21.56.45:357][787]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2025.07.22-21.56.45:357][787]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2025.07.22-21.56.45:357][787]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2025.07.22-21.56.45:357][787]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2025.07.22-21.56.45:357][787]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2025.07.22-21.56.45:358][787]AssetCheck: /Game/FPMovement/Maps/MainLevel Öğe doğrulama
