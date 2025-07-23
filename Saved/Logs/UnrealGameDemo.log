@@ -2448,3 +2448,13 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2025.07.22-23.57.22:979][632]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2478.650146
 [2025.07.22-23.57.23:980][635]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
 [2025.07.22-23.57.23:980][635]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2479.319824, Update Interval: 345.308990
+[2025.07.22-23.59.42:599][ 92]LogUObjectHash: Compacting FUObjectHashTables data took   1.06ms
+[2025.07.22-23.59.45:092][ 92]LogSlate: Window 'Save Content' being destroyed
+[2025.07.22-23.59.45:113][ 92]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.07.22-23.59.45:218][ 92]LogSavePackage: Moving output files for package: /Game/FPMovement/Blueprints/Items/BP_FlashlightDEMO
+[2025.07.22-23.59.45:218][ 92]LogSavePackage: Moving '../../../../../../Users/Metesd/Documents/Unreal Projects/UnrealGameDemo/Saved/BP_FlashlightDEMOC604B53243754E9C1CB6E4BF62E02F15.tmp' to '../../../../../../Users/Metesd/Documents/Unreal Projects/UnrealGameDemo/Content/FPMovement/Blueprints/Items/BP_FlashlightDEMO.uasset'
+[2025.07.22-23.59.45:245][ 92]LogFileHelpers: InternalPromptForCheckoutAndSave took 132 ms (total: 340 ms)
+[2025.07.22-23.59.45:248][ 92]AssetCheck: New page: Asset Save: BP_FlashlightDEMO
+[2025.07.22-23.59.45:248][ 92]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/FPMovement/Blueprints/Items/BP_FlashlightDEMO.BP_FlashlightDEMO
+[2025.07.22-23.59.45:252][ 93]LogAutomationController: Ignoring very large delta of 2.68 seconds in calls to FAutomationControllerManager::Tick() and not penalizing unresponsive tests
+[2025.07.22-23.59.52:907][462]LogSlate: Window 'Save Level As' being destroyed
